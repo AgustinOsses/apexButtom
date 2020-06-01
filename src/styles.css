@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+#img_perfil {
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+}
+
+.btn-apex-green {
+    background-color: #84d600;
+    color: white;
+    width: 100%;
+    ;
+}
+
+.btn-apex-red {
+    background-color: tomato;
+    color: white;
+    width: 100%;
+    ;
+}

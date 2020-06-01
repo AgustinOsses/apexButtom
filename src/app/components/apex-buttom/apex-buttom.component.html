@@ -1,0 +1,26 @@
+<div class="row justify-content-center">
+    <div class=" col col-lg-3 mt-4">
+        <div class="card" style="width: 25rem;">
+            <div class="card-body">
+                <div class="text-center">
+                    <img id="img_perfil" src="assets/img/playa.jpg" alt="Foto de perfil">
+                </div>
+                <h5 class="card-title text-center mt-3">Agus</h5>
+                <div class="text-center">
+                    <a href="#">Ver mi perfil</a>
+                </div>
+                <hr>
+                <p class="card-text ">Tu horario hoy: 15:00 a 21:30</p>
+                <hr>
+                <p *ngIf="propiedades.firmaEntrada">Firma de entrada registrada a las {{horarioEntrada| date:'H:mm'}}</p>
+                <p *ngIf="propiedades.firmaSalida">Firma de salida registrada a las {{horarioSalida| date:'H:mm'}}</p>
+
+                <!-- Linea de codigo para hacer que desaparezca el boton en vez de que se deshabilite -->
+                <!-- <button [disabled]="propiedades.firmaSalida" (click)="cambio() " [ngClass]="{ 'btn-danger': propiedades.firmaEntrada, 'btn-success':!propiedades.firmaEntrada} " type=" button " name="button " class="btn ">{{frase}}</button> -->
+
+                <button [disabled]="propiedades.firmaSalida" (click)="cambio() " [ngClass]="{ ' btn-apex-red': propiedades.firmaEntrada, ' btn-apex-green':!propiedades.firmaEntrada} " type=" button " name="button " class="btn ">{{frase}}</button>
+
+            </div>
+        </div>
+    </div>
+</div>
